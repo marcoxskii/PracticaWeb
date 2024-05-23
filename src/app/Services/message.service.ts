@@ -16,4 +16,6 @@ export class MessageService {
   getMessage(){
     return getDocs(query(collection(this.firestore, 'messages')))
   }
+
 }
+

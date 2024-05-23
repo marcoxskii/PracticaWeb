@@ -2,12 +2,25 @@
 
 <div>
     <label id="TxtTitle">Titulo: </label>
-    <input type="text" id="txtTitle" name="TxtTitle"[(ngModel)]="mensaje.title"/>
+    <input type="text" id="txtTitle" name="TxtTitle" [(ngModel)]="mensaje.title"/>
     <br>
     <br>
     <label for="TxtMsg">Mensaje: </label>
     <textarea cols="50" rows="7" id="TxtMsg" name="TxtMsg" [(ngModel)]="mensaje.msg"></textarea>
     <br>
     <button (click)="guardar()">Guardar</button>
+</div>
+
+<p> Mensajes recientes de FireBase:</p>
+
+
+<div>
+    <ul>
+        @for(msg of message; track msg.id){
+            
+                <li><strong>{{msg.title}}</strong>: <span>{{msg.msg}}</span></li>
+            
+        }
+    </ul>
 </div>
 

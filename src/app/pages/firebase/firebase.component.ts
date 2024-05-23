@@ -39,4 +39,8 @@ export class FirebaseComponent {
     console.log('Mensaje Enviado');
   }
 
+  mostrar(){
+    console.log(this.message);
+  }
+
 }

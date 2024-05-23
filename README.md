@@ -16,6 +16,7 @@ npm install -g firebase-tools
 ## para el deploy
 ng build --prod
 npm install -g firebase-tools (same)
+firebase login
 firebase init
 
 firebase deploy

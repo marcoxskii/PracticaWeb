@@ -10,12 +10,12 @@ Decorar
 
 
 ## para firebase:
-ng add @angular/fire
+ng add @angular/fire (same)
 npm install -g firebase-tools
 
 ## para el deploy
-ng build 
-npm install -g firebase-tools
+ng build --prod
+npm install -g firebase-tools (same)
 firebase init
 
 firebase deploy

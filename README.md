@@ -14,5 +14,10 @@ ng add @angular/fire
 npm install -g firebase-tools
 
 ## para el deploy
-Firebase deploy
-Sudo firebase experiments:enable webframeworks
+ng build 
+npm install -g firebase-tools
+firebase init
+
+firebase deploy
+
+sudo firebase experiments:enable webframeworks
